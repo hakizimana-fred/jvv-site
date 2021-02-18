@@ -56,7 +56,7 @@
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <!--RD Navbar Brand-->
                             <div class="rd-navbar-brand">
-                                <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-300x100.png" alt="" width="150" height="50" /><img class="brand-logo-light" src="images/logo-default-300x100.png" alt="" width="150" height="50" /></a>
+                                <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-300x100.png')}}" alt="" width="150" height="50" /><img class="brand-logo-light" src="images/logo-default-300x100.png" alt="" width="150" height="50" /></a>
                             </div>
                         </div>
                         <div class="rd-navbar-main-element">
