@@ -178,6 +178,8 @@ return [
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         WebLAgence\LaravelFacebookPixel\LaravelFacebookPixelServiceProvider::class,
 
+
+
     ],
 
     /*
