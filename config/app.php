@@ -176,6 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+        WebLAgence\LaravelFacebookPixel\LaravelFacebookPixelServiceProvider::class,
 
     ],
 
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'LaravelFacebookPixel' => WebLAgence\LaravelFacebookPixel\LaravelFacebookPixelFacade::class,
 
     ],
 

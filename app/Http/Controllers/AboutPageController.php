@@ -16,22 +16,22 @@ class AboutPageController extends Controller
     public function index()
     {
 
-        SEOMeta::setTitle('My About Page Controller');
+        SEOMeta::setTitle('About-us');
         SEOMeta::setDescription('About page description');
         SEOMeta::setKeywords('About JVV incorporated, lorem ipsum ..........');
-        SEOMeta::setCanonical('http://localhost:8080/About');
+        SEOMeta::setCanonical('http://localhost:8080/about');
 
-        OpenGraph::setDescription('This is my page description');
+        OpenGraph::setDescription('This is my about page description');
         OpenGraph::setTitle('Home');
-        OpenGraph::setUrl('http://current.url.com');
+        OpenGraph::setUrl('hhttp://localhost:8080/about');
         OpenGraph::addProperty('type', 'articles');
 
-        TwitterCard::setTitle('Homepage');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setTitle('about-us');
+        TwitterCard::setSite('@twitterusername');
 
-        JsonLd::setTitle('Homepage');
-        JsonLd::setDescription('This is my page description');
-        JsonLd::addImage('https://codecasts.com.br/img/logo.jpg');
+        JsonLd::setTitle('about-us');
+        JsonLd::setDescription('This is my about page description');
+        JsonLd::addImage('https://jvv/img/logo.jpg');
 
         return view('about');
     }
