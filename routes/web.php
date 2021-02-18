@@ -32,3 +32,14 @@ Route::get('/single-service', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+
+Route::get('/team', function () {
+    return view('team');
+});
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
