@@ -3,19 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
 
-class HomePageController extends Controller
+
+class AboutPageController extends Controller
 {
     //
     public function index()
     {
-        SEOMeta::setTitle('HomePage');
-        SEOMeta::setDescription('Home page description');
-        SEOMeta::setCanonical('http://localhost:8080');
+
+        SEOMeta::setTitle('My About Page Controller');
+        SEOMeta::setDescription('About page description');
+        SEOMeta::setKeywords('About JVV incorporated, lorem ipsum ..........');
+        SEOMeta::setCanonical('http://localhost:8080/About');
 
         OpenGraph::setDescription('This is my page description');
         OpenGraph::setTitle('Home');
@@ -29,7 +33,6 @@ class HomePageController extends Controller
         JsonLd::setDescription('This is my page description');
         JsonLd::addImage('https://codecasts.com.br/img/logo.jpg');
 
-
-        return view('home');
+        return view('about');
     }
 }

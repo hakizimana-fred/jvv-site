@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\AboutPageController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\ContactsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,22 +18,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomePageController::class, 'index']);
+Route::get('/about', [AboutPageController::class, 'index']);
+Route::get('/services', [ServicesController::class, 'index']);
+Route::get('/contacts', [ContactsController::class, 'index']);
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/services', function () {
-    return view('services');
-});
 
 Route::get('/single-service', function () {
     return view('single-service');
 });
 
-Route::get('/contacts', function () {
-    return view('contacts');
-});
 
 Route::get('/team', function () {
     return view('team');
